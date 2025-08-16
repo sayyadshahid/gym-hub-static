@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Azam Gym - Sign Up</title>
+    <meta name="description" content="Join Azam Gym today and start your fitness transformation. Create your account to access premium equipment, expert trainers, and wellness programs.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="/signup.html">
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+                <span class="text-2xl font-bold">Azam Gym</span>
+            </div>
+            
+            <h1 class="auth-title">Join Azam Gym</h1>
+            <p class="auth-description">
+                Create your account to start your fitness journey
+            </p>
+            
+            <form id="signup-form" class="auth-form space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input 
+                            id="firstName" 
+                            type="text" 
+                            class="form-input"
+                            placeholder="John"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input 
+                            id="lastName" 
+                            type="text" 
+                            class="form-input"
+                            placeholder="Doe"
+                            required
+                        >
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        id="email" 
+                        type="email" 
+                        class="form-input"
+                        placeholder="john@example.com"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input 
+                        id="phone" 
+                        type="tel" 
+                        class="form-input"
+                        placeholder="+1 (555) 123-4567"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input 
+                        id="password" 
+                        type="password" 
+                        class="form-input"
+                        placeholder="Create a strong password"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input 
+                        id="confirmPassword" 
+                        type="password" 
+                        class="form-input"
+                        placeholder="Confirm your password"
+                        required
+                    >
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-full btn-lg">
+                    Create Account
+                </button>
+                
+                <div class="text-center">
+                    <span class="text-muted">
+                        Already have an account?
+                        <a href="login.html" class="auth-link">Sign in</a>
+                    </span>
+                </div>
+                
+                <div class="text-center">
+                    <a href="index.html" class="back-link">
+                        Back to homepage
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

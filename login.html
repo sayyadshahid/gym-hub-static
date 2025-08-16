@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Azam Gym</title>
+    <meta name="description" content="Sign in to your Azam Gym account to access your membership, track progress, and manage your fitness journey.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="/login.html">
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+                <span class="text-2xl font-bold">Azam Gym</span>
+            </div>
+            
+            <h1 class="auth-title">Welcome Back</h1>
+            <p class="auth-description">
+                Sign in to your account to continue
+            </p>
+            
+            <form id="login-form" class="auth-form space-y-4">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        id="email" 
+                        type="email" 
+                        class="form-input"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input 
+                        id="password" 
+                        type="password" 
+                        class="form-input"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+                
+                <div class="flex items-center justify-between">
+                    <a href="#" class="auth-link">
+                        Forgot password?
+                    </a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-full btn-lg">
+                    Sign In
+                </button>
+                
+                <div class="text-center">
+                    <span class="text-muted">
+                        Don't have an account?
+                        <a href="signup.html" class="auth-link">Sign up</a>
+                    </span>
+                </div>
+                
+                <div class="text-center">
+                    <a href="index.html" class="back-link">
+                        Back to homepage
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
