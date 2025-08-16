@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu, Dumbbell } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
             <Dumbbell className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">FitForce</span>
+            <span className="text-2xl font-bold text-foreground">Azam Gym</span>
           </div>
           
           <nav className="hidden md:flex space-x-8">
@@ -20,12 +21,16 @@ const Header = () => {
           </nav>
           
           <div className="flex items-center space-x-4">
-            <Button variant="outline" className="hidden sm:inline-flex">
-              Sign In
-            </Button>
-            <Button variant="hero">
-              Join Now
-            </Button>
+            <Link to="/login">
+              <Button variant="outline" className="hidden sm:inline-flex">
+                Sign In
+              </Button>
+            </Link>
+            <Link to="/signup">
+              <Button variant="hero">
+                Join Now
+              </Button>
+            </Link>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="h-5 w-5" />
             </Button>
